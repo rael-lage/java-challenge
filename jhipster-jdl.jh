@@ -1,0 +1,44 @@
+
+
+entity Client {
+	id Number required
+}
+
+entity Buyer {
+	name String required,
+ 	email String required,
+ 	cpf Long required
+}
+
+entity Payment {
+	amount BigDecimal required,
+	type PaymentType required,
+    status PaymentStatus    
+}
+
+entity Card {
+	holderName String required,
+    number String required,
+    expirationDate LocalDate required,
+    cvv Integer required
+}
+
+entity Boleto {
+    number Long required
+}
+
+
+enum PaymentType {
+    CREDITCARD, BOLETO
+}
+
+enum PaymentStatus {
+    APPROVED, REFUSED, CANCELED
+}
+
+relationship OneToOne {
+	Payment{client} to Client,
+    Payment{buyer} to Buyer,
+    Payment{card} to Card,
+    Payment{boleto} to Boleto
+}

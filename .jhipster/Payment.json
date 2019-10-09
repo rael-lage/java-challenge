@@ -1,0 +1,68 @@
+{
+    "name": "Payment",
+    "fields": [
+        {
+            "fieldName": "amount",
+            "fieldType": "BigDecimal",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "PaymentType",
+            "fieldValues": "CREDITCARD,BOLETO",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "PaymentStatus",
+            "fieldValues": "APPROVED,REFUSED,CANCELED"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "client",
+            "otherEntityRelationshipName": "payment",
+            "relationshipName": "client",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "buyer",
+            "otherEntityRelationshipName": "payment",
+            "relationshipName": "buyer",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "card",
+            "otherEntityRelationshipName": "payment",
+            "relationshipName": "card",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "boleto",
+            "otherEntityRelationshipName": "payment",
+            "relationshipName": "boleto",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20191009004457",
+    "entityTableName": "payment",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

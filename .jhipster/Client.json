@@ -1,0 +1,14 @@
+{
+    "name": "Client",
+    "fields": [],
+    "relationships": [],
+    "changelogDate": "20191009004455",
+    "entityTableName": "client",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

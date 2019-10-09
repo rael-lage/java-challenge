@@ -1,0 +1,22 @@
+{
+    "name": "Boleto",
+    "fields": [
+        {
+            "fieldName": "number",
+            "fieldType": "Long",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20191009004459",
+    "entityTableName": "boleto",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

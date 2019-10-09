@@ -1,0 +1,38 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.wirecard.javachallenge"
+    },
+    "jhipsterVersion": "6.3.1",
+    "applicationType": "monolith",
+    "baseName": "JavaChallenge",
+    "packageName": "com.wirecard.javachallenge",
+    "packageFolder": "com/wirecard/javachallenge",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "ZWQ5NDUyNGQyZWVlMDIxYjkyYjc5OTNlYTUxMzQ0Nzk5ZGU4MDUzMDBmOWEwYmE4ZDY1OTc5YmZhOTQ5YWQzMDM4ODI0NDA3M2MxNTQ0NjExNmM5MmI4NWVhOTA1YzZkZmI4NDZkNjY0MDc0ZjY4ZWE5YzUzZjliYTZhNmFmM2Y=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "react",
+    "clientTheme": "darkly",
+    "clientThemeVariant": "primary",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": []
+  }
+}
